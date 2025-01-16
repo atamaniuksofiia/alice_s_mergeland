@@ -1,6 +1,6 @@
 import { defineConfig } from 'vite';
 import { glob } from 'glob';
-import injectHTML from 'vite-plugin-html-inject';
+// import injectHTML from 'vite-plugin-html-inject';
 import FullReload from 'vite-plugin-full-reload';
 import SortCss from 'postcss-sort-media-queries';
 
@@ -38,7 +38,7 @@ export default defineConfig(({ command }) => {
       emptyOutDir: true,
     },
     plugins: [
-      injectHTML(),
+      // injectHTML(),
       FullReload(['./src/**/**.html']),
       SortCss({
         sort: 'mobile-first',
