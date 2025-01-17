@@ -1,0 +1,24 @@
+.footer {
+  background-color: #f8f8f8;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-item {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: #333;
+}
+
+.footer-link:hover {
+  color: #007bff;
+}

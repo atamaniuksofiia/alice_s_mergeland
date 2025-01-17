@@ -37,3 +37,14 @@ img {
 ::after {
   box-sizing: border-box;
 }
+h1,
+h2 {
+  font-family: 'Luckiest Guy', cursive;
+  line-height: 1;
+  color: #58341b;
+}
+
+body {
+  font-family: 'Commissioner', sans-serif;
+  color: #311909;
+}
