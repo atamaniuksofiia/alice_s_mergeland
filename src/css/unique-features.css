@@ -1,0 +1,64 @@
+.unique-features {
+  position: relative;
+  /* padding: 50px 20px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.unique-features-container {
+  text-align: center;
+}
+
+.unique-features-heading {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1;
+  text-align: center;
+  color: #58341b;
+  margin-bottom: 24px;
+
+  background-image: url('../img/unique-features/paper-scroll.1x.png.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 310px;
+  height: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.unique-features-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 32px;
+  margin-bottom: 60px;
+}
+
+.features-item {
+  border-radius: 20px;
+  width: 288px;
+  height: 152px;
+  background: #fff9ef;
+}
+
+.features-name {
+  font-weight: 800;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 8px;
+  margin-top: 24px;
+}
+
+.features-paragraph {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-bottom: 24px;
+}
