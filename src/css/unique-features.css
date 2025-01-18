@@ -1,6 +1,5 @@
 .unique-features {
   position: relative;
-  /* padding: 50px 20px; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,25 +19,32 @@
   font-size: 24px;
   line-height: 1;
   text-align: center;
-  color: #58341b;
   margin-bottom: 24px;
+  position: relative;
+  z-index: 2;
+  padding: 24px 0;
+}
 
+.unique-features-heading::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 310px;
+  height: 110px;
   background-image: url('../img/unique-features/paper-scroll.1x.png.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  width: 310px;
-  height: 110px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  z-index: -1;
 }
 
 .unique-features-list {
   list-style: none;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
   gap: 32px;
   margin-bottom: 60px;
   justify-content: center;
