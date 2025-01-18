@@ -4,10 +4,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image: url('../img/unique-features/unique-features-background.1x.png.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
 }
 
 .unique-features-container {
   text-align: center;
+  display: ruby;
 }
 
 .unique-features-heading {
@@ -36,6 +41,7 @@
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 32px;
   margin-bottom: 60px;
+  justify-content: center;
 }
 
 .features-item {
