@@ -47,4 +47,6 @@ h2 {
 body {
   font-family: 'Commissioner', sans-serif;
   color: #311909;
+  margin: 0;
+  padding: 0;
 }

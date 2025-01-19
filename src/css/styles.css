@@ -3,6 +3,7 @@
 
 /* Sections style */
 @import url('./header.css');
+@import url('./main-page.css');
 @import url('./about-the-game.css');
 @import url('./meet-alice.css');
 @import url('./how-to-play.css');
