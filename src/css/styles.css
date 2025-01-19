@@ -17,3 +17,4 @@ body:not(.privacy-page) .privacy-policy,
 body:not(.conditions-page) .terms-and-conditions {
   display: none;
 }
+
