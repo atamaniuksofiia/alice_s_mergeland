@@ -1,19 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
-
-.main {
-  width: 1200px;
-  height: 740px;
-  margin-top: 72px;
-}
-
-.main__img {
-  width: 1200px;
-  height: 650px;
-  transform: scaleX(-1);
-}
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&display=swap');
 
 .main__container {
   position: relative;
+  width: 1200px;
+  height: 650px;
+  margin-top: 70px;
+}
+
+.main__container::before {
+  content: '';
+  position: absolute;
+  width: 1200px;
+  height: 650px;
+  background-image: url('../img/main-page-cover.png');
+  background-repeat: no-repeat;
 }
 
 .main__logo {
@@ -30,7 +31,7 @@
   position: absolute;
   top: 220px;
   left: 127px;
-  font-family: "Luckiest Guy", serif;
+  font-family: 'Luckiest Guy', serif;
   font-size: 48px;
   font-weight: 400;
   line-height: 48px;
@@ -47,4 +48,87 @@
   width: 270px;
   display: flex;
   justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 50px 50px 50px 50px;
+  transition: transform 0.3s ease;
+}
+
+.google__play:hover {
+  transform: scale(1.05);
+}
+
+.google__play-container {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.google__play-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  gap: 2px;
+}
+
+.google__play-logo {
+  width: 36px;
+  height: 39px;
+}
+
+.google__play-title {
+  font-family: "Commissioner", serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.google__play-subtitle {
+  font-family: "Commissioner", serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+
+}
+
+.main__alica {
+ width: 560px;
+ height: 560px;
+ position: absolute;
+ top: 90px;
+ right: 120px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .main__container::before {
+    background-image: url('../img/main-page-cover@2x.png');
+  }
+}
+
+.line {
+  z-index: 10;
+  position: relative;
+  width: 1200px;
+  height: 20px;
+  margin-top: -10px;
+  margin-bottom: -10px;
+}
+
+.line__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1266px;
+  height: 20px;
 }
