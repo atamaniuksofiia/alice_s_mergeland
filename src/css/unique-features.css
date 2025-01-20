@@ -90,3 +90,78 @@
   margin-bottom: 24px;
   color: #666;
 }
+@media screen and (min-width: 1200px) {
+  .unique-features {
+    background-image: url('../img/unique-features/unique-features-background-d-1.x.png.png');
+    background-size: cover;
+    background-position: center;
+    width: 1200px;
+    height: 1000px;
+    position: relative;
+    padding: 90px 0;
+    margin: 0 auto;
+  }
+
+  .unique-features-container {
+    max-width: 1200px;
+  }
+
+  .unique-features-heading {
+    font-size: 40px;
+    color: #333;
+    padding: 0;
+  }
+
+  .unique-features-heading::before {
+    display: none;
+  }
+
+  .unique-features-list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    width: 753px;
+    padding: 40px 0;
+  }
+
+  .unique-features-list::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1200px;
+    height: 850px;
+    background-image: url('../img/unique-features/paper-scroll-d-1x.png.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 0;
+    margin-top: 50px;
+  }
+
+  .features-item {
+    width: 235px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+    z-index: 2;
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .features-name {
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-weight: 800;
+  }
+
+  .features-paragraph {
+    font-size: 20px;
+    padding: 0;
+    margin-bottom: 0;
+    line-height: 1.5;
+  }
+}
