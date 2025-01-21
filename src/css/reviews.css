@@ -51,7 +51,7 @@
   width: 288px;
   height: 272px;
   background-image: url('../img/reviews/background-paper-1.1x.png.png');
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   z-index: 1;
@@ -96,4 +96,35 @@
   text-align: center;
   color: #58341b;
   margin-bottom: 40px;
+}
+@media (min-width: 1200px) {
+  .reviews {
+    max-width: 1200px;
+    padding: 120px 0;
+  }
+  .reviews-container {
+    flex-direction: column;
+  }
+
+  .reviews-list {
+    flex-direction: row;
+    justify-content: center;
+    max-width: 100%;
+  }
+
+  .reviews-item {
+    width: 288px;
+    padding: 0;
+    height: 272px;
+  }
+
+  .reviews-item::before {
+    width: 267px;
+    height: 330px;
+  }
+
+  .reviews-heading {
+    font-size: 40px;
+    padding-bottom: 42px;
+  }
 }
