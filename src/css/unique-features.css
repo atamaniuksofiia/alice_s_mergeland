@@ -3,11 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url('../img/unique-features/unique-features-background.1x.png.png');
-  background-repeat: no-repeat;
-  background-position: center;
   background-size: 320px;
-  width: 100%;
   padding: 40px 0;
 }
 
@@ -31,21 +27,30 @@
   padding: 24px 0;
 }
 
-.unique-features-heading::before {
-  content: '';
+/* Фон для секції */
+.unique-features-background-mobile {
   position: absolute;
-  top: 50%;
+  top: 0;
+  width: 320px;
+  height: 1308px;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Фон для списку */
+.paper-scroll-background-mobile {
+  position: absolute;
+  top: 6%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 310px;
   height: 110px;
-  background-image: url('../img/unique-features/paper-scroll.1x.png.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  z-index: -1;
+  z-index: 1;
 }
-
+.paper-scroll-background,
+.unique-features-background {
+  display: none;
+}
 .unique-features-list {
   list-style: none;
   padding: 0;
@@ -77,7 +82,7 @@
   text-align: center;
   margin-bottom: 8px;
   margin-top: 24px;
-  color: #333;
+  color: #58341b;
 }
 
 .features-paragraph {
@@ -88,32 +93,27 @@
   padding-left: 16px;
   padding-right: 16px;
   margin-bottom: 24px;
-  color: #666;
+  color: #311909;
 }
 @media screen and (min-width: 1200px) {
   .unique-features {
-    background-image: url('../img/unique-features/unique-features-background-d-1.x.png.png');
-    background-size: cover;
-    background-position: center;
-    width: 1200px;
-    height: 1000px;
-    position: relative;
-    padding: 90px 0;
-    margin: 0 auto;
+    padding: 0%;
   }
 
   .unique-features-container {
-    max-width: 1200px;
+    width: 1200px;
+    height: 1000px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 
   .unique-features-heading {
     font-size: 40px;
-    color: #333;
     padding: 0;
-  }
-
-  .unique-features-heading::before {
-    display: none;
   }
 
   .unique-features-list {
@@ -123,20 +123,8 @@
     padding: 40px 0;
   }
 
-  .unique-features-list::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 1200px;
-    height: 850px;
-    background-image: url('../img/unique-features/paper-scroll-d-1x.png.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    z-index: 0;
-    margin-top: 50px;
+  .features-item:hover {
+    transform: translateY(-2px);
   }
 
   .features-item {
@@ -163,5 +151,30 @@
     padding: 0;
     margin-bottom: 0;
     line-height: 1.5;
+  }
+  .unique-features-background-mobile,
+  .paper-scroll-background-mobile {
+    display: none;
+  }
+  .unique-features-background {
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 1200px;
+    height: 1000px;
+    object-fit: cover;
+    z-index: -1;
+  }
+
+  /* Фон для списку */
+  .paper-scroll-background {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1200px;
+    height: 850px;
+    z-index: -1;
   }
 }
