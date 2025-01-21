@@ -1,0 +1,144 @@
+.t-c-heading {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1;
+  margin-top: 36px;
+  margin-bottom: 16px;
+}
+.t-c-paragraph {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #311909;
+  margin-bottom: 24px;
+}
+.terms-and-conditions-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 288px;
+  margin: 0 auto;
+  background-color: #fff9ef;
+}
+.t-c-info-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.t-c-name {
+  margin-bottom: 16px;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  color: #58341b;
+}
+
+.t-c-inner-item:not(:last-child) {
+  margin-bottom: 24px;
+}
+.t-c-inner-item:last-child {
+  margin-bottom: 40px;
+}
+.t-c-description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #311909;
+  margin-bottom: 16px;
+}
+.t-c-inner-heading {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  color: #58341b;
+  margin-bottom: 16px;
+}
+.t-c-inner-list {
+  list-style-type: disc;
+  padding-left: 20px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 24px;
+}
+
+.t-c-inner-item:not(:last-child) {
+  margin-bottom: 24px;
+  margin-top: 24px;
+}
+.t-c-inner-item:last-child {
+  margin-bottom: 40px;
+}
+.t-c-link-list {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 24px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.t-c-disclosure-list {
+  list-style-type: disc;
+  padding-left: 20px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.t-c-link {
+  color: blue;
+  text-decoration: underline;
+}
+
+.t-c-link:hover {
+  color: darkblue;
+  text-decoration: underline;
+}
+@media screen and (min-width: 1200px) {
+  .terms-and-conditions-container {
+    width: 1140px;
+  }
+  .t-c-heading {
+    font-size: 40px;
+    margin-top: 40px;
+    margin-bottom: 24px;
+    line-height: 1;
+  }
+  .t-c-inner-heading {
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+  .t-c-paragraph {
+    font-size: 20px;
+    margin-bottom: 32px;
+  }
+  .t-c-name {
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+
+  .t-c-description {
+    font-size: 20px;
+    margin-bottom: 24px;
+  }
+  .t-c-inner-list {
+    font-size: 20px;
+  }
+  .t-c-link-list {
+    font-size: 20px;
+  }
+  .t-c-disclosure-list {
+    font-size: 20px;
+  }
+  .t-c-inner-item:not(:last-child) {
+    margin-bottom: 24px;
+    margin-top: 32px;
+  }
+  .t-c-inner-item:last-child {
+    margin-bottom: 80px;
+  }
+}
