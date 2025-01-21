@@ -4,13 +4,20 @@
 .header {
   position: fixed;
   top: 0;
-  left: 0;
-  display: flex;
-  align-items: center;
+  left: 50%;
+  transform: translateX(-50%);
   width: 1200px;
   height: 72px;
   background: rgba(77, 43, 111, 1);
   z-index: 1000;
+  display: flex;
+  align-items: center;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  width: 1200px;
 }
 
 .logo {
@@ -25,8 +32,7 @@
 
 .nav {
   display: flex;
-  margin-left: 87px;
-
+  margin-left: 115px;
 }
 
 .nav__links {
