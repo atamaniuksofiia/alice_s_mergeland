@@ -1,0 +1,115 @@
+.how-to-play__container {
+  width: 1200px;
+  max-width: 1200px;
+  padding: 0;
+  height: 1300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(230, 206, 155, 1);
+  position: relative;
+}
+
+.how-to-play__bgimg {
+  position: absolute;
+}
+
+.how-to-play__bgimg1 {
+  top: 16px;
+  left: 190px;
+}
+
+.how-to-play__bgimg2 {
+  top: 10px;
+  right: 140px;
+}
+
+.how-to-play__bgimg3 {
+  bottom: 150px;
+  left: 30px;
+}
+
+.how-to-play__bgimg4 {
+  right: 8px;
+  bottom: 225px;
+}
+
+.how-to-play__title {
+  margin-top: 120px;
+  text-align: center;
+  font-family: Luckiest Guy;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 40px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: rgba(88, 52, 27, 1);
+}
+
+.how-to-play__text {
+  margin-top: 20px;
+  text-align: center;
+  width: 700px;
+  font-family: Commissioner;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.how-to-play__block {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 28px;
+  align-items: center;
+  width: 364px;
+  height: 471px;
+  border-radius: 32px 32px 32px 32px;
+  background: rgba(255, 249, 239, 1);
+}
+
+.how-to-play__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-top: 56px;
+  gap: 24px;
+  width: 1200px;
+  max-width: 1200px;
+  justify-content: center;
+}
+
+.how-to-play__img {
+  width: 308px;
+  height: 264px;
+}
+
+.how-to-play__block-title {
+  margin-top: 20px;
+  width: 308px;
+  font-family: Commissioner;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 28.8px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: rgba(88, 52, 27, 1);
+}
+
+.how-to-play__block-text {
+  margin-top: 8px;
+  width: 308px;
+  font-family: Commissioner;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: rgba(49, 25, 9, 1);
+}
