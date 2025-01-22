@@ -4,7 +4,6 @@
   justify-content: center;
   align-items: center;
   background-size: 320px;
-  padding: 40px 0;
 }
 
 .unique-features-container {
@@ -15,22 +14,21 @@
   margin: 0 auto;
   padding: 0 20px;
 }
-
 .unique-features-heading {
   font-weight: 400;
   font-size: 24px;
   line-height: 1;
   text-align: center;
-  margin-bottom: 24px;
+  margin-bottom: 72px;
   position: relative;
   z-index: 2;
-  padding: 24px 0;
+  margin-top: 80px;
 }
 
 /* Фон для секції */
 .unique-features-background-mobile {
   position: absolute;
-  top: 0;
+  top: -1px;
   width: 320px;
   height: 1308px;
   object-fit: cover;
@@ -40,7 +38,7 @@
 /* Фон для списку */
 .paper-scroll-background-mobile {
   position: absolute;
-  top: 6%;
+  top: 8%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 310px;
@@ -57,7 +55,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(288px, 1fr));
   gap: 32px;
-  margin-bottom: 60px;
+  margin-bottom: 55px;
   justify-content: center;
   width: 100%;
 }
@@ -95,6 +93,10 @@
   margin-bottom: 24px;
   color: #311909;
 }
+.line {
+  max-width: 320px;
+  margin: 0 auto;
+}
 @media screen and (min-width: 1200px) {
   .unique-features {
     padding: 0%;
@@ -106,7 +108,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+
     align-items: center;
     text-align: center;
   }
@@ -114,6 +116,8 @@
   .unique-features-heading {
     font-size: 40px;
     padding: 0;
+    margin-top: 188px;
+    margin-bottom: 56px;
   }
 
   .unique-features-list {
@@ -176,5 +180,8 @@
     width: 1200px;
     height: 850px;
     z-index: -1;
+  }
+  .line {
+    max-width: 1200px;
   }
 }

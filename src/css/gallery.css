@@ -1,19 +1,19 @@
 .gallery {
   background: linear-gradient(360deg, #fffaf1 0%, #e5cb96 100%);
-  padding: 20px 0;
+
   width: 100%;
   max-width: 320px;
   margin: 0 auto;
 }
 
 .gallery-container {
-  padding: 20px;
   overflow: hidden;
 }
 
 .gallery-heading {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 32px;
+  margin-top: 55px;
   font-size: 1.5rem;
 }
 
@@ -30,12 +30,8 @@
 .swiper {
   width: 100%;
   height: auto;
-}
-
-.swiper-wrapper {
-  display: flex;
-  gap: 24px;
   overflow: visible;
+  margin-bottom: 55px;
 }
 
 .swiper-slide {
@@ -85,20 +81,18 @@
     font-weight: 400;
     font-size: 40px;
     line-height: 1;
-    margin-bottom: 40px;
+    margin-bottom: 56px;
+    margin-top: 110px;
     margin-top: 20px;
   }
 
   .swiper {
     grid-row: 2;
     grid-column: 1;
-  }
-
-  .swiper-wrapper {
-    display: flex;
-    gap: 24px;
     overflow: visible;
+    gap: 24px;
     justify-content: center;
+    margin-bottom: 114px;
   }
 
   .swiper-slide img {
