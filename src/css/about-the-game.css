@@ -24,9 +24,9 @@
 .about__scroll {
   width: 288px;
   height: 512px;
-  /* padding: 90 138 120 138; */
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 20px;
   position: relative;
   padding: 0;
@@ -37,29 +37,36 @@
     display: none;
 }
 
+.about__scroll-img-mobile {
+  display: block;
+  position: absolute;
+}
+
 .about__scroll-title {
-  margin-top: 47px;
-  z-index: 11;
+  position: absolute;
+  top: 47px;
   color: rgba(88, 52, 27, 1);
   font-family: Luckiest Guy;
-  font-size: 40px;
+  font-size: 24px;
   font-weight: 400;
-  line-height: 40px;
+  line-height: 24px;
   text-align: center;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
+
 }
 
 .about__scroll-text {
-  margin-left: 138px;
+  position: absolute;
+  top: 87px;
   color: rgba(49, 25, 9, 1);
   z-index: 10;
-  width: 364px;
-  height: 330px;
+  width: 200px;
+  height: 336px;
   font-family: Commissioner;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 400;
-  line-height: 30px;
+  line-height: 24px;
   text-align: center;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
@@ -95,7 +102,7 @@
   }
 
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-    .main__container::before {
+    .about__container::before {
       background-image: url('../img/about-bgimg@2x.png');
     }
   }
@@ -120,8 +127,9 @@
   }
 
   .about__scroll-title {
-    margin-top: 90px;
-    z-index: 10;
+    position: absolute;
+    top: 90px;
+
     color: rgba(88, 52, 27, 1);
     font-family: Luckiest Guy;
     font-size: 40px;
@@ -133,7 +141,8 @@
   }
 
   .about__scroll-text {
-    margin-left: 138px;
+    position: absolute;
+    top: 150px;
     color: rgba(49, 25, 9, 1);
     z-index: 10;
     width: 364px;

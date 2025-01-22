@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&display=swap');
 
-
 .main__container {
   position: relative;
   width: 320px;
@@ -17,15 +16,13 @@
   height: 568px;
   background-image: url('../img/main-page-cover-mobile.png');
   background-repeat: no-repeat;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .main__container::before {
+    background-image: url('../img/main-page-cover-mobile@2x.png');
   }
-
-  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-    .main__container::before {
-      background-image: url('../img/main-page-cover-mobile@2x.png');
-    }
-  }
-
-
+}
 
 .main__logo {
   position: absolute;
@@ -34,7 +31,6 @@
   width: 190px;
   height: 100px;
 }
-
 
 .google__play {
   position: absolute;
@@ -88,7 +84,6 @@
   color: rgba(49, 25, 9, 1);
 }
 
-
 .google__play-subtitle {
   font-family: 'Commissioner', serif;
   font-size: 20px;
@@ -99,8 +94,6 @@
   text-decoration-skip-ink: none;
   color: rgba(49, 25, 9, 1);
 }
-
-
 
 .main__alica {
   display: none;
@@ -133,17 +126,10 @@
   text-align: center;
 }
 
-
-
-
-
 @media screen and (min-width: 1200px) {
-
   .main__alica-mobile {
     display: none;
   }
-
-
   .main__container {
     position: relative;
     width: 1200px;
@@ -256,8 +242,6 @@
     top: 90px;
     right: 120px;
   }
-
-
 
   .line {
     margin: 0 auto;
