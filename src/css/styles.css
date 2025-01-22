@@ -13,6 +13,7 @@
 @import url('./terms-and-conditions.css');
 @import url('./privacy-policy.css');
 @import url('./footer.css');
+@import url('./modal.css');
 
 body:not(.privacy-page) .privacy-policy,
 body:not(.conditions-page) .terms-and-conditions {
