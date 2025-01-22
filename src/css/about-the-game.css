@@ -1,4 +1,82 @@
+.about__container {
+  width: 320px;
+  height: 568px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about__container::before {
+  content: '';
+  position: absolute;
+  width: 320px;
+  height: 568px;
+  background-image: url('../img/about-bgimg-mobile.png');
+  background-repeat: no-repeat;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .main__container::before {
+    background-image: url('../img/about-bgimg-mobile@2x.png');
+  }
+}
+
+.about__scroll {
+  width: 288px;
+  height: 512px;
+  /* padding: 90 138 120 138; */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+.about__scroll-img {
+    display: none;
+}
+
+.about__scroll-title {
+  margin-top: 47px;
+  z-index: 11;
+  color: rgba(88, 52, 27, 1);
+  font-family: Luckiest Guy;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 40px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.about__scroll-text {
+  margin-left: 138px;
+  color: rgba(49, 25, 9, 1);
+  z-index: 10;
+  width: 364px;
+  height: 330px;
+  font-family: Commissioner;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+
+
+
+
+
 @media screen and (min-width: 1200px) {
+
+  .about__scroll-img-mobile {
+    display: none;
+}
+
+
   .about__container {
     width: 1200px;
     height: 800px;
@@ -12,13 +90,13 @@
     position: absolute;
     width: 1200px;
     height: 800px;
-    background-image: url('../img/about-cover.png');
+    background-image: url('../img/about-bgimg.png');
     background-repeat: no-repeat;
   }
 
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     .main__container::before {
-      background-image: url('../img/about-cover@2x.png');
+      background-image: url('../img/about-bgimg@2x.png');
     }
   }
 

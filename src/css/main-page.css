@@ -9,6 +9,7 @@
   margin-top: -56px;
   padding: 0;
 }
+
 .main__container::before {
   content: '';
   position: absolute;
@@ -16,8 +17,7 @@
   height: 568px;
   background-image: url('../img/main-page-mobile-bgimg.png');
   background-repeat: no-repeat;
-  z-index: -1;
-}
+  }
 
 .main__logo {
   position: absolute;
@@ -123,6 +123,12 @@
   width: 288px;
   height: 112px;
   text-align: center;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .main__container::before {
+    background-image: url('../img/main-page-mobile-bgimg@2x.png');
+  }
 }
 
 
