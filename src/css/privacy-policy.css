@@ -17,9 +17,10 @@
   align-items: center;
   justify-content: flex-start;
   flex-direction: column;
-  width: 320px;
+  width: 288px;
   margin: 0 auto;
   background-color: #fff9ef;
+  padding: 0 16px;
 }
 .p-p-info-wrapper {
   display: flex;
@@ -83,7 +84,8 @@
 }
 @media screen and (min-width: 1200px) {
   .privacy-policy-container {
-    width: 1200px;
+    width: 1140px;
+    padding: 0 30px;
   }
   .p-p-heading {
     font-size: 40px;

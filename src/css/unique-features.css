@@ -25,7 +25,6 @@
   margin-top: 80px;
 }
 
-/* Фон для секції */
 .unique-features-background-mobile {
   position: absolute;
   top: -1px;
@@ -35,7 +34,6 @@
   z-index: -1;
 }
 
-/* Фон для списку */
 .paper-scroll-background-mobile {
   position: absolute;
   top: 8%;
@@ -93,13 +91,28 @@
   margin-bottom: 24px;
   color: #311909;
 }
-.line {
-  max-width: 320px;
-  margin: 0 auto;
-  margin-bottom: -1px;
-  margin-top: -1px;
+.line_img-mobile {
+  display: block;
+  width: 320px;
+  height: 10px;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+}
+.line_img {
+  display: none;
 }
 @media screen and (min-width: 1200px) {
+  .line_img-mobile {
+    display: none;
+  }
+  .line_img {
+    display: block;
+    width: 1200px;
+    margin-bottom: -2px;
+  }
   .unique-features {
     padding: 0%;
   }
@@ -110,7 +123,6 @@
     position: relative;
     display: flex;
     flex-direction: column;
-
     align-items: center;
     text-align: center;
   }
@@ -172,7 +184,6 @@
     z-index: -1;
   }
 
-  /* Фон для списку */
   .paper-scroll-background {
     display: block;
     position: absolute;
@@ -182,10 +193,5 @@
     width: 1200px;
     height: 850px;
     z-index: -1;
-  }
-  .line {
-    max-width: 1200px;
-    margin-bottom: -4px;
-    margin-top: -4px;
   }
 }
