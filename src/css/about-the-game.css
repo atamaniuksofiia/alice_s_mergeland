@@ -1,66 +1,59 @@
 .about__container {
   width: 320px;
   height: 568px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
-.about__container::before {
-  content: '';
-  position: absolute;
+.about__wrapper {
   width: 320px;
   height: 568px;
-  background-image: url('../img/about-bgimg-mobile.png');
-  background-repeat: no-repeat;
-}
-
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  .about__container::before {
-    background-image: url('../img/about-bgimg-mobile@2x.png');
-  }
-}
-
-.about__scroll {
-  width: 288px;
-  height: 512px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
   position: relative;
-  padding: 0;
-  margin: 0;
 }
 
 .about__scroll-img {
-    display: none;
+  display: none;
+}
+
+.about__bgimg {
+  display: none;
+}
+
+.about__bgimg-mobile {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 320px;
+  height: 568px;
 }
 
 .about__scroll-img-mobile {
   display: block;
   position: absolute;
+  width: 288px;
+  height: 512px;
+  top: 33px;
+  left: 16px;
 }
 
 .about__scroll-title {
   position: absolute;
-  top: 47px;
+  width: 200px;
+  top: 80px;
+  left: 60px;
   color: rgba(88, 52, 27, 1);
   font-family: Luckiest Guy;
   font-size: 24px;
   font-weight: 400;
   line-height: 24px;
   text-align: center;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
 
 }
 
 .about__scroll-text {
   position: absolute;
-  top: 87px;
+  top: 120px;
+  left: 60px;
   color: rgba(49, 25, 9, 1);
-  z-index: 10;
   width: 200px;
   height: 336px;
   font-family: Commissioner;
@@ -68,55 +61,33 @@
   font-weight: 400;
   line-height: 24px;
   text-align: center;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
 }
-
-
-
-
-
 
 @media screen and (min-width: 1200px) {
-
-  .about__scroll-img-mobile {
-    display: none;
-}
-
-
   .about__container {
     width: 1200px;
     height: 800px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 
-  .about__container::before {
-    content: '';
+  .about__wrapper {
+    width: 1200px;
+    height: 800px;
+    position: relative;
+  }
+
+  .about__scroll-img-mobile {
+    display: none;
+  }
+
+  .about__bgimg-mobile {
+    display: none;
+  }
+
+  .about__bgimg {
+    display: block;
     position: absolute;
     width: 1200px;
     height: 800px;
-    background-image: url('../img/about-bgimg.png');
-    background-repeat: no-repeat;
-  }
-
-  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-    .about__container::before {
-      background-image: url('../img/about-bgimg@2x.png');
-    }
-  }
-
-  .about__scroll {
-    width: 640px;
-    height: 540px;
-    padding: 90 138 120 138;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    position: relative;
-    padding: 0;
-    margin: 0;
   }
 
   .about__scroll-img {
@@ -124,27 +95,28 @@
     position: absolute;
     width: 640px;
     height: 540px;
+    top: 140px;
+    left: 280px;
   }
 
   .about__scroll-title {
     position: absolute;
-    top: 90px;
-
+    top: 230px;
+    left: 418px;
+    width: 364px;
     color: rgba(88, 52, 27, 1);
     font-family: Luckiest Guy;
     font-size: 40px;
     font-weight: 400;
     line-height: 40px;
     text-align: center;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
   }
 
   .about__scroll-text {
     position: absolute;
-    top: 150px;
+    top: 290px;
+    left: 418px;
     color: rgba(49, 25, 9, 1);
-    z-index: 10;
     width: 364px;
     height: 330px;
     font-family: Commissioner;
@@ -152,7 +124,5 @@
     font-weight: 400;
     line-height: 30px;
     text-align: center;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
   }
 }
