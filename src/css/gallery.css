@@ -30,24 +30,28 @@
   width: 320px;
   height: 10px;
 }
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .gallery-image {
   display: block;
-  width: auto !important;
-  height: auto;
+  width: 280px;
+  height: 160px;
   object-fit: cover;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   margin: 0 auto;
   transition: transform 0.3s ease-in-out;
 }
+
 .gallery-image img {
-  width: 280px;
+  width: 100%;
   height: 100%;
   object-fit: cover;
-  display: block;
-  margin: 0 auto;
 }
-.gallery-image:hover {
+.gallery-image img:hover {
   transform: scale(1.1);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
@@ -57,13 +61,6 @@
   height: auto;
   overflow: visible;
   margin-bottom: 55px;
-}
-
-.swiper-slide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
 }
 
 .swiper-slide img {
@@ -211,6 +208,16 @@
   .swiper-button-next:after,
   .swiper-rtl .swiper-button-prev:after {
     content: '';
+  }
+  .swiper-slide {
+    transform: scale(0.8); /* Зменшує розмір слайда */
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out; /* Плавний перехід розміру та затемнення */
+    filter: brightness(0.5); /* Затемнення */
+  }
+
+  .swiper-slide-active {
+    transform: scale(1);
+    filter: brightness(1); /* Яскравий слайд у центрі */
   }
   .btn-wrapper {
     display: flex;
