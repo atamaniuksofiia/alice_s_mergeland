@@ -60,8 +60,26 @@
   background-color: #e5cb96;
   opacity: 1;
 }
-
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+  content: '';
+}
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+  content: '';
+}
+.swiper-button-prev,
+.swiper-button-next {
+  display: none;
+}
 @media screen and (min-width: 1200px) {
+  .line__img {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
   .gallery {
     max-width: 1200px;
     margin: 0 auto;
@@ -116,5 +134,35 @@
     height: 360px;
     transition: transform 0.3s ease-in-out;
     object-fit: cover;
+  }
+  .swiper-button-prev {
+    width: 40px;
+    height: 40px;
+    background: url('../img/gallery/left.png') no-repeat center center; /* Замініть на ваш іконку */
+    background-size: contain;
+    z-index: 2;
+    background-color: none;
+    outline: none;
+  }
+  .swiper-button-next {
+    width: 40px;
+    height: 40px;
+    background: url('../img/gallery/right.png') no-repeat center center; /* Замініть на ваш іконку */
+    background-size: contain;
+    z-index: 2;
+  }
+  .swiper-button-prev:after,
+  .swiper-rtl .swiper-button-next:after {
+    content: '';
+  }
+  .swiper-button-next:after,
+  .swiper-rtl .swiper-button-prev:after {
+    content: '';
+  }
+  .btn-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 736px;
   }
 }

@@ -17,7 +17,7 @@
   align-items: center;
   justify-content: flex-start;
   flex-direction: column;
-  width: 288px;
+  width: 320px;
   margin: 0 auto;
   background-color: #fff9ef;
 }
@@ -83,7 +83,7 @@
 }
 @media screen and (min-width: 1200px) {
   .privacy-policy-container {
-    width: 1140px;
+    width: 1200px;
   }
   .p-p-heading {
     font-size: 40px;
