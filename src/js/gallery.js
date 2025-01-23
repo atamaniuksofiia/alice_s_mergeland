@@ -119,21 +119,19 @@ document.addEventListener('DOMContentLoaded', function () {
   // });
   function updateSlideStyles() {
     const slides = document.querySelectorAll('.swiper-slide');
-    const activeIndex = swiper.realIndex; // Індекс активного слайда
+    const activeIndex = swiper.realIndex;
 
     slides.forEach((slide, index) => {
       const realIndex = parseInt(
         slide.getAttribute('data-swiper-slide-index'),
         10
-      ); // Отримуємо реальний індекс слайда
+      );
 
       if (realIndex === activeIndex) {
-        // Центральне зображення
         slide.style.transform = 'scale(1)';
         slide.style.filter = 'brightness(1)';
         slide.style.zIndex = '2';
       } else {
-        // Бокові зображення
         slide.style.transform = 'scale(0.8)';
         slide.style.filter = 'brightness(0.5)';
         slide.style.zIndex = '1';
@@ -141,6 +139,5 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  // Оновлюємо стилі для першого слайда при завантаженні
   updateSlideStyles();
 });
