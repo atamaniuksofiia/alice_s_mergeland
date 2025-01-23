@@ -1,8 +1,108 @@
+.how-to-play__container {
+  width: 320px;
+  height: 2384px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(230, 206, 155, 1);
+  position: relative;
+  padding: 0;
+}
+
+.how-to-play__bgimg {
+  position: absolute;
+}
+
+.how-to-play__bgimg1 {
+  top: 14px;
+  left: 7px;
+  width: 80px;
+  height: 92px;
+}
+
+.how-to-play__bgimg2 {
+  top: 35px;
+  right: 10px;
+  width: 72px;
+  height: 74px;
+}
+
+.how-to-play__bgimg3 {
+  display: none;
+}
+
+.how-to-play__bgimg4 {
+  display: none;
+}
+
+.how-to-play__title {
+  margin-top: 60px;
+  text-align: center;
+  font-family: Luckiest Guy;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgba(88, 52, 27, 1);
+}
+
+.how-to-play__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-top: 32px;
+  gap: 32px;
+  width: 320px;
+  justify-content: center;
+  align-items: center;
+}
+
+.how-to-play__block {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 16px;
+  align-items: center;
+  width: 288px;
+  height: 406px;
+  border-radius: 32px 32px 32px 32px;
+  background: rgba(255, 249, 239, 1);
+}
+
+.how-to-play__img {
+  display: none;
+}
+
+.how-to-play__img-mobile {
+  display: block;
+  width: 256px;
+  height: 256px;
+}
+
+.how-to-play__block-title {
+  margin-top: 24px;
+  width: 256px;
+  font-family: Commissioner;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 24px;
+  text-align: center;
+  color: rgba(88, 52, 27, 1);
+}
+
+.how-to-play__block-text {
+  margin-top: 8px;
+  width: 256px;
+  font-family: Commissioner;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  color: rgba(49, 25, 9, 1);
+}
+
 @media screen and (min-width: 1200px) {
   .how-to-play__container {
     width: 1200px;
-    max-width: 1200px;
-    padding: 0;
     height: 1300px;
     display: flex;
     flex-direction: column;
@@ -11,107 +111,74 @@
     position: relative;
   }
 
-  .how-to-play__bgimg {
-    position: absolute;
-  }
-
   .how-to-play__bgimg1 {
     top: 16px;
     left: 190px;
+    width: 180px;
+    height: 206px;
   }
 
   .how-to-play__bgimg2 {
     top: 10px;
     right: 140px;
+    width: 196px;
+    height: 200px;
   }
 
   .how-to-play__bgimg3 {
+    display: block;
     bottom: 150px;
     left: 30px;
   }
 
   .how-to-play__bgimg4 {
+    display: block;
     right: 8px;
     bottom: 225px;
   }
 
   .how-to-play__title {
     margin-top: 120px;
-    text-align: center;
-    font-family: Luckiest Guy;
     font-size: 40px;
-    font-weight: 400;
     line-height: 40px;
     text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-    color: rgba(88, 52, 27, 1);
-  }
-
-  .how-to-play__text {
-    margin-top: 20px;
-    text-align: center;
-    width: 700px;
-    font-family: Commissioner;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 30px;
-    text-align: center;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-  }
-
-  .how-to-play__block {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding-top: 28px;
-    align-items: center;
-    width: 364px;
-    height: 471px;
-    border-radius: 32px 32px 32px 32px;
-    background: rgba(255, 249, 239, 1);
   }
 
   .how-to-play__wrapper {
-    display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
     margin-top: 56px;
     gap: 24px;
     width: 1200px;
-    max-width: 1200px;
     justify-content: center;
   }
 
+  .how-to-play__block {
+    padding-top: 28px;
+    width: 364px;
+    height: 471px;
+  }
+
   .how-to-play__img {
+    display: block;
     width: 308px;
     height: 264px;
+  }
+
+  .how-to-play__img-mobile {
+    display: none;
   }
 
   .how-to-play__block-title {
     margin-top: 20px;
     width: 308px;
-    font-family: Commissioner;
     font-size: 24px;
-    font-weight: 800;
     line-height: 28.8px;
-    text-align: center;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-    color: rgba(88, 52, 27, 1);
   }
 
   .how-to-play__block-text {
     margin-top: 8px;
     width: 308px;
-    font-family: Commissioner;
     font-size: 20px;
-    font-weight: 400;
     line-height: 30px;
-    text-align: center;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-    color: rgba(49, 25, 9, 1);
   }
 }
