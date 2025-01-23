@@ -1,4 +1,4 @@
-<section class="gallery">
+<section class="gallery" id="gallery">
   <div class="container gallery-container">
     <h2 class="gallery-heading">Gallery</h2>
 
@@ -33,7 +33,19 @@
       <div class="swiper-pagination"></div>
     </div>
   </div>
-  <div class="line">
-    <img src="./img/line@2x.png" class="line__img" />
+  <div>
+    <img
+      src="./img/lines/lines.png"
+      srcset="./img/lines/lines.png 1x, ./img/lines/lines@2x.png 2x"
+      class="line_img"
+    />
+    <img
+      src="./img/lines/lines-mobile.png"
+      srcset="
+        ./img/lines/lines-mobile.png    1x,
+        ./img/lines/lines-mobile@2x.png 2x
+      "
+      class="line_img-mobile"
+    />
   </div>
 </section>

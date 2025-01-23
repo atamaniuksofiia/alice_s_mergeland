@@ -1,8 +1,6 @@
 .back-home {
   display: flex;
   align-items: center;
-
-  padding: 12px 24px;
   background-color: #4d2b6f;
   color: white;
   text-decoration: none;
@@ -12,7 +10,13 @@
   width: 320px;
   margin: 0 auto;
 }
-
+.back-home-wrapper {
+  display: flex;
+  justify-content: flex-start;
+}
+.back-home-link {
+  padding: 12px 24px;
+}
 .back-home:hover {
   opacity: 0.9;
 }

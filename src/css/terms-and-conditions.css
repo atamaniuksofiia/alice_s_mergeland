@@ -20,6 +20,7 @@
   width: 288px;
   margin: 0 auto;
   background-color: #fff9ef;
+  padding: 0 16px;
 }
 .t-c-info-wrapper {
   display: flex;
@@ -101,6 +102,7 @@
 @media screen and (min-width: 1200px) {
   .terms-and-conditions-container {
     width: 1140px;
+    padding: 0 30px;
   }
   .t-c-heading {
     font-size: 40px;

@@ -1,11 +1,17 @@
 .gallery {
   background: linear-gradient(360deg, #fffaf1 0%, #e5cb96 100%);
-
+  position: relative;
   width: 100%;
   max-width: 320px;
   margin: 0 auto;
 }
-
+.line-container {
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
 .gallery-container {
   overflow: hidden;
 }
@@ -16,7 +22,14 @@
   margin-top: 55px;
   font-size: 1.5rem;
 }
-
+.line_img {
+  display: none;
+}
+.line_img-mobile {
+  display: block;
+  width: 320px;
+  height: 10px;
+}
 .gallery-image {
   display: block;
   width: 100%;
@@ -73,13 +86,20 @@
   display: none;
 }
 @media screen and (min-width: 1200px) {
-  .line__img {
-    width: 100%;
-    max-width: 1200px;
-    height: auto;
-    display: block;
-    margin: 0 auto;
+  .line_img-mobile {
+    display: none;
   }
+  .line_img {
+    display: block;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1200px;
+    height: 20px;
+    z-index: 100;
+  }
+
   .gallery {
     max-width: 1200px;
     margin: 0 auto;
@@ -138,7 +158,7 @@
   .swiper-button-prev {
     width: 40px;
     height: 40px;
-    background: url('../img/gallery/left.png') no-repeat center center; /* Замініть на ваш іконку */
+    background: url('../img/gallery/left.png') no-repeat center center;
     background-size: contain;
     z-index: 2;
     background-color: none;
@@ -148,8 +168,11 @@
     width: 40px;
     height: 40px;
     background: url('../img/gallery/right.png') no-repeat center center; /* Замініть на ваш іконку */
-    background-size: contain;
     z-index: 2;
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: block;
   }
   .swiper-button-prev:after,
   .swiper-rtl .swiper-button-next:after {
