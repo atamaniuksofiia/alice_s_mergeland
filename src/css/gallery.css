@@ -194,7 +194,7 @@
   .swiper-button-next {
     width: 40px;
     height: 40px;
-    background: url('../img/gallery/right.png') no-repeat center center; /* Замініть на ваш іконку */
+    background: url('../img/gallery/right.png') no-repeat center center;
     z-index: 2;
   }
   .swiper-button-prev,
@@ -210,14 +210,14 @@
     content: '';
   }
   .swiper-slide {
-    transform: scale(0.8); /* Зменшує розмір слайда */
-    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out; /* Плавний перехід розміру та затемнення */
-    filter: brightness(0.5); /* Затемнення */
+    transform: scale(0.8);
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+    filter: brightness(0.5);
   }
 
   .swiper-slide-active {
     transform: scale(1);
-    filter: brightness(1); /* Яскравий слайд у центрі */
+    filter: brightness(1);
   }
   .btn-wrapper {
     display: flex;
