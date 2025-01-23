@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', function () {
     spaceBetween: 24,
     loop: true,
     centeredSlides: true,
-    loopedSlides: 5,
+    loopedSlides: 3,
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
@@ -95,19 +95,45 @@ document.addEventListener('DOMContentLoaded', function () {
     },
   });
 
-  function updateSlideStyles(clickedIndex = null) {
-    const slides = document.querySelectorAll('.swiper-slide');
+  //   function updateSlideStyles(clickedIndex = null) {
+  //     const slides = document.querySelectorAll('.swiper-slide');
 
-    const activeIndex = clickedIndex !== null ? clickedIndex : swiper.realIndex;
+  //     const activeIndex = clickedIndex !== null ? clickedIndex : swiper.realIndex;
+
+  //     slides.forEach((slide, index) => {
+  //       const diff = Math.abs(index - activeIndex);
+
+  //       if (diff === 0) {
+  //         slide.style.transform = 'scale(1)';
+  //         slide.style.filter = 'brightness(1)';
+  //         slide.style.zIndex = '2';
+  //       } else {
+  //         slide.style.transform = 'scale(0.8)';
+  //         slide.style.filter = 'brightness(0.5)';
+  //         slide.style.zIndex = '1';
+  //       }
+  //     });
+  //   }
+
+  //   updateSlideStyles(swiper.realIndex);
+  // });
+  function updateSlideStyles() {
+    const slides = document.querySelectorAll('.swiper-slide');
+    const activeIndex = swiper.realIndex; // Індекс активного слайда
 
     slides.forEach((slide, index) => {
-      const diff = Math.abs(index - activeIndex);
+      const realIndex = parseInt(
+        slide.getAttribute('data-swiper-slide-index'),
+        10
+      ); // Отримуємо реальний індекс слайда
 
-      if (diff === 0) {
+      if (realIndex === activeIndex) {
+        // Центральне зображення
         slide.style.transform = 'scale(1)';
         slide.style.filter = 'brightness(1)';
         slide.style.zIndex = '2';
       } else {
+        // Бокові зображення
         slide.style.transform = 'scale(0.8)';
         slide.style.filter = 'brightness(0.5)';
         slide.style.zIndex = '1';
@@ -115,5 +141,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  updateSlideStyles(swiper.realIndex);
+  // Оновлюємо стилі для першого слайда при завантаженні
+  updateSlideStyles();
 });
