@@ -1,6 +1,5 @@
-.reviews {
+/* .reviews {
   background-color: #e5cb96;
-  padding: 40px 0;
   position: relative;
   max-width: 320px;
   margin: 0 auto;
@@ -32,16 +31,17 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
-  padding: 40px 20px;
   justify-content: center;
   align-items: center;
   background-color: transparent;
 }
 
 .reviews-item:last-child {
-  margin-bottom: 0;
+  margin-bottom: 57px;
 }
-
+.reviews-item:not(:last-child) {
+  margin-bottom: 27px;
+}
 .reviews-item::before {
   content: '';
   position: absolute;
@@ -51,7 +51,7 @@
   width: 288px;
   height: 272px;
   background-image: url('../img/reviews/background-paper-1.1x.png.png');
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   z-index: 1;
@@ -71,7 +71,7 @@
   text-align: center;
   margin: 0;
   margin-bottom: 8px;
-  color: #000;
+  color: #58341b;
 }
 
 .reviews-paragraph {
@@ -85,6 +85,7 @@
   padding: 0 10px;
   max-width: 240px;
   margin: 0 auto;
+  color: #58341b;
 }
 
 .reviews-heading {
@@ -95,5 +96,202 @@
   line-height: 1;
   text-align: center;
   color: #58341b;
-  margin-bottom: 40px;
+  margin-bottom: 29px;
+  margin-top: 55px;
+}
+@media (min-width: 1200px) {
+  .reviews {
+    max-width: 1200px;
+  }
+  .reviews-container {
+    flex-direction: column;
+  }
+
+  .reviews-list {
+    flex-direction: row;
+    justify-content: center;
+    max-width: 100%;
+    margin-bottom: 122px;
+  }
+
+  .reviews-item {
+    width: 288px;
+    padding: 0;
+    height: 272px;
+  }
+
+  .reviews-item::before {
+    width: 267px;
+    height: 330px;
+  }
+
+  .reviews-heading {
+    font-size: 40px;
+    margin-bottom: 42px;
+    margin-top: 110px;
+  }
+  .reviews-item:last-child {
+    margin-bottom: 27px;
+  }
+} */
+.reviews {
+  background-color: #e5cb96;
+  position: relative;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.reviews-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.reviews-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  width: 100%;
+  max-width: 256px;
+}
+
+.reviews-item {
+  position: relative;
+  width: 288px;
+  height: 272px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+
+.reviews-item:last-child {
+  margin-bottom: 57px;
+}
+
+.reviews-item:not(:last-child) {
+  margin-bottom: 27px;
+}
+
+.reviews-item::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 288px;
+  height: 272px;
+  background-image: url('../img/reviews/background-paper-1.1x.png.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 1;
+}
+
+.reviews-item:nth-child(2)::before {
+  background-image: url('../img/reviews/background-paper-2.1x.png.png');
+}
+
+.reviews-item:nth-child(4)::before {
+  background-image: url('../img/reviews/background-paper-2.1x.png.png');
+}
+
+/* Add content wrapper for rotation */
+.reviews-content-wrapper {
+  position: relative;
+  z-index: 2;
+  transform: rotate(-2deg); /* Slight rotation to match paper tilt */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reviews-name {
+  position: relative;
+  z-index: 2;
+  font-weight: 800;
+  font-size: 20px;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 8px;
+  color: #58341b;
+}
+
+.reviews-paragraph {
+  position: relative;
+  z-index: 2;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  margin: 0;
+  padding: 0 10px;
+  max-width: 240px;
+  margin: 0 auto;
+  color: #58341b;
+}
+
+.reviews-heading {
+  position: relative;
+  z-index: 2;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1;
+  text-align: center;
+  color: #58341b;
+  margin-bottom: 29px;
+  margin-top: 55px;
+}
+
+/* Alternate rotation for even items */
+.reviews-item:nth-child(even) .reviews-content-wrapper {
+  transform: rotate(2deg);
+}
+
+@media (min-width: 1200px) {
+  .reviews {
+    max-width: 1200px;
+  }
+
+  .reviews-container {
+    flex-direction: column;
+  }
+
+  .reviews-list {
+    flex-direction: row;
+    justify-content: center;
+    max-width: 100%;
+    margin-bottom: 122px;
+  }
+  .reviews-collum {
+    margin-top: 20px;
+  }
+  .reviews-item {
+    width: 288px;
+    padding: 0;
+    height: 272px;
+  }
+
+  .reviews-item::before {
+    width: 267px;
+    height: 330px;
+  }
+
+  .reviews-heading {
+    font-size: 40px;
+    margin-bottom: 42px;
+    margin-top: 110px;
+  }
+
+  .reviews-item:last-child {
+    margin-bottom: 27px;
+  }
 }

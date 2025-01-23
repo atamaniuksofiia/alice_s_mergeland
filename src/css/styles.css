@@ -14,10 +14,10 @@
 @import url('./privacy-policy.css');
 @import url('./footer.css');
 @import url('./modal.css');
-
+@import url('./header-p-p.css');
+@import url('./privacy-policy-main.css');
+@import url('./terms-and-conditions-main.css');
 body:not(.privacy-page) .privacy-policy,
 body:not(.conditions-page) .terms-and-conditions {
   display: none;
 }
-
-
