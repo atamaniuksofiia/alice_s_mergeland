@@ -9,13 +9,25 @@
   transition: opacity 0.3s ease;
   width: 320px;
   margin: 0 auto;
+  padding-top: 22px;
+  padding-bottom: 14px;
 }
 .back-home-wrapper {
   display: flex;
   justify-content: flex-start;
 }
 .back-home-link {
-  padding: 12px 24px;
+  padding: 0px 24px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #fff9ef;
+}
+.back-home-link svg {
+  stroke: white;
 }
 .back-home:hover {
   opacity: 0.9;
@@ -23,5 +35,9 @@
 @media screen and (min-width: 1200px) {
   .back-home {
     width: 1200px;
+    padding: 24px 0;
+  }
+  .back-home-link {
+    font-size: 20px;
   }
 }
