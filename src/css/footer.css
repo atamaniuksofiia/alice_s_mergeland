@@ -35,10 +35,20 @@
   transition: opacity 0.3s ease;
   line-height: 1.2;
   font-weight: 500;
+  padding: 8px 12px;
 }
 
 .footer-link:hover {
   opacity: 0.8;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-color: #fff9ef;
+  border-radius: 16px;
+  padding: 12px;
+}
+
+.footer-link:active {
+  background-color: rgba(255, 255, 255, 0.4);
+  border-color: #fff;
 }
 .footer-domain {
   font-size: 16px;

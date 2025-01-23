@@ -50,3 +50,10 @@ body {
   margin: 0;
   padding: 0;
 }
+button,
+a {
+  background: none;
+  border: none;
+  outline: none;
+  box-shadow: none;
+}

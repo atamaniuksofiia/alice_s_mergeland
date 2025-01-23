@@ -96,6 +96,8 @@
 .line {
   max-width: 320px;
   margin: 0 auto;
+  margin-bottom: -1px;
+  margin-top: -1px;
 }
 @media screen and (min-width: 1200px) {
   .unique-features {
@@ -122,9 +124,8 @@
 
   .unique-features-list {
     grid-template-columns: repeat(3, 1fr);
-    gap: 0;
+    gap: 24px;
     width: 753px;
-    padding: 40px 0;
   }
 
   .features-item:hover {
@@ -141,6 +142,7 @@
     z-index: 2;
     background: transparent;
     box-shadow: none;
+    margin-bottom: 24px;
   }
 
   .features-name {
@@ -183,5 +185,7 @@
   }
   .line {
     max-width: 1200px;
+    margin-bottom: -4px;
+    margin-top: -4px;
   }
 }
