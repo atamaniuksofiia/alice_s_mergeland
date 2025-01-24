@@ -1,3 +1,6 @@
+#gallery {
+  scroll-margin-top: 100px;
+}
 .gallery {
   background: linear-gradient(360deg, #fffaf1 0%, #e5cb96 100%);
   position: relative;
