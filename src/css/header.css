@@ -1,5 +1,5 @@
 .header {
-  position: relative;
+  position: fixed;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
@@ -9,7 +9,9 @@
   display: flex;
   align-items: center;
   box-sizing: border-box;
-}
+  backdrop-filter: blur(1px);
+  background: rgba(178, 65, 219, 0.5);
+  }
 
 .header__sandwich {
   position: absolute;
