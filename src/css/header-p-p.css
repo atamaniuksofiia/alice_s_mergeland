@@ -11,6 +11,10 @@
   margin: 0 auto;
   padding-top: 22px;
   padding-bottom: 14px;
+  position: fixed;
+  top: 0; 
+  left: 50%; 
+  transform: translateX(-50%);
 }
 .back-home-wrapper {
   display: flex;
