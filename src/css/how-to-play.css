@@ -114,15 +114,15 @@
   .how-to-play__bgimg1 {
     top: 16px;
     left: 190px;
-    width: 180px;
-    height: 206px;
+    width: 128px;
+    height: 171px;
   }
 
   .how-to-play__bgimg2 {
     top: 10px;
     right: 140px;
-    width: 196px;
-    height: 200px;
+    width: 160px;
+    height: 162px;
   }
 
   .how-to-play__bgimg3 {
@@ -169,7 +169,7 @@
   }
 
   .how-to-play__block-title {
-    margin-top: 20px;
+    margin-top: 24px;
     width: 308px;
     font-size: 24px;
     line-height: 28.8px;

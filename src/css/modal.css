@@ -64,8 +64,15 @@
   text-decoration: none;
   color: rgba(49, 25, 9, 1);
   transition: transform 0.3s ease;
+  padding: 12px 15px;
+  border-radius: 16px;
 }
 
-a .modal__menu-li:hover {
-  transform: scale(1.05);
+
+.modal__menu-li:hover {
+  background: rgba(229, 222, 219, 1);
+}
+
+.modal__menu-li:active {
+  background: rgba(229, 222, 219, 1);
 }

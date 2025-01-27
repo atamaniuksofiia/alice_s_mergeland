@@ -16,3 +16,10 @@ modal.addEventListener('click', event => {
     modal.style.display = 'none';
   }
 });
+
+const modalLinks = document.querySelectorAll('.modal-link');
+modalLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        modal.style.display = 'none';
+    });
+});

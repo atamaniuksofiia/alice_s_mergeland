@@ -21,7 +21,9 @@
   left: 0;
   width: 320px;
   height: 568px;
+  filter: brightness(0.8);
 }
+
 
 .about__scroll-img-mobile {
   display: block;
@@ -81,6 +83,7 @@
     position: absolute;
     width: 1200px;
     height: 800px;
+    background: rgba(0, 0, 0, 0.2);
   }
 
   .about__scroll-img {
